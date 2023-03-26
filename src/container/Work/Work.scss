@@ -1,0 +1,117 @@
+.app__work-filter {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4rem;
+  margin: 4rem 0 2rem;
+  gap: 1rem;
+
+  .app__work-filter-item {
+    background-color: var(--white-color);
+    padding: 10px;
+    width: 6rem;
+    border-radius: 10px;
+    color: #000;
+    font-weight: 800;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #313bac;
+      transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+      color: var(--white-color);
+    }
+    @media screen and (min-witch: 2000px) {
+      padding: 20px;
+      border-radius: 20px;
+      margin: 2rem;
+    }
+  }
+  .item-active {
+    background-color: #313bac;
+    color: var(--white-color);
+  }
+}
+.app__work-protfolio {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+
+  .app__work-item {
+    cursor: pointer;
+    width: 300px;
+    flex-direction: column;
+    transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+    &:hover {
+      //   scale: 1.1;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    }
+
+    margin: 2rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background-color: var(--white-color);
+    .app__work-img {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      img {
+        width: 100%;
+        object-fit: cover;
+        border-radius: 0.5rem;
+      }
+      @media screen and (min-witch: 200px) {
+        width: 400px;
+      }
+    }
+  }
+}
+.app__work-hover {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border-radius: 0.5rem;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  div {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 1rem;
+    svg {
+      width: 50%;
+      height: 100%;
+    }
+    &:hover {
+      scale: 1.3;
+      transition: all 0.3s ease-in-out;
+    }
+  }
+}
+.app__work-content {
+  width: 100%;
+  flex-direction: column;
+  position: relative;
+
+  h4 {
+    margin-top: 1rem;
+    font-weight: 900;
+    font-size: 1rem;
+    color: #000;
+  }
+  .app__work-tag {
+    position: absolute;
+    top: -29px;
+    background-color: #fff;
+    padding: 10px 10px 10px;
+    border-radius: 10px;
+  }
+}
