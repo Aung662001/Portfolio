@@ -35,8 +35,10 @@ import nb from "../assets/nb.png";
 import skype from "../assets/skype.png";
 import spotify from "../assets/spotify.png";
 import copy from "../assets/Copy.png";
+import logoforme from "../assets/logoforme.png";
 
 export default {
+  logoforme,
   copy,
   email,
   mobile,
