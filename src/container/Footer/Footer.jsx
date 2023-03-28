@@ -41,6 +41,7 @@ const Footer = () => {
         duration: 0.5,
         ease: "easeIn",
       }}
+      id="contact"
     >
       <section id="footer" className="app__footer">
         <h2>Take A Coffee & Chat With Me?</h2>
